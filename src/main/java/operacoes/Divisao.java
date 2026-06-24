@@ -5,10 +5,12 @@ import java.util.Scanner;
 public class Divisao {
     static void main() {
         Scanner scanner = new Scanner(System.in);
+        double x;
+        double y;
         System.out.println("Digite o primeiro valor: ");
-        double x = scanner.nextDouble();
+        x = scanner.nextDouble();
         System.out.println("Digite o segundo valor: ");
-        double y = scanner.nextDouble();
+        y = scanner.nextDouble();
         System.out.println("o resultado é: " + calcular(x, y));
     }
 
