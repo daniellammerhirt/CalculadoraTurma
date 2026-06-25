@@ -7,13 +7,13 @@ public class JurosCompostos {
         double c;
         double i;
         double t;
-        System.out.println("Digite o valor do capital inicial ");
+        System.out.println("Digite o valor do capital inicial: ");
         c = scanner.nextDouble();
-        System.out.println("Digite o valor dos juros");
+        System.out.println("Digite o valor dos juros: ");
         i = scanner.nextDouble();
-        System.out.println("Digite o tempo");
+        System.out.println("Digite o tempo: ");
         t = scanner.nextDouble();
-        System.out.println("o resultado é " + calcular(c,i,t));
+        System.out.println("o resultado é: " + calcular(c,i,t));
     }
     public static double calcular(double c, double i, double t){
         return Multiplicacao.calcular(c,Potencia.calcular(Soma.calcular(1,i),t));
