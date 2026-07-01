@@ -7,7 +7,7 @@ public class Primorial {
         Scanner scanner = new Scanner(System.in);
         int x;
 
-        System.out.println("Digite a quantidade de números primos para o primorial: ");
+        System.out.println("Digite o primeiro valor: ");
         x = scanner.nextInt();
 
         System.out.println("o resultado é: " + calcular(x));
