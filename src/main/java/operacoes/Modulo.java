@@ -3,16 +3,19 @@ package operacoes;
 import java.util.Scanner;
 
 public class Modulo {
-    public static void main(String[] args) {
-        Scanner leitor = new Scanner(System.in);
+    static void main() {
+        Scanner scanner = new Scanner(System.in);
+        double x;
+        System.out.print("Digite o valor: ");
+        x = scanner.nextDouble();
 
-        System.out.print("digite um numero ");
-        int numero = leitor.nextInt();
+        System.out.println("o resultado é: " + calcular(x));
+    }
 
-        int resultado =(int) Raiz.calcular(Multiplicacao.calcular(numero,numero));
-
-        System.out.println("O modulo é " + resultado);
-
-        leitor.close();
+    public static double calcular(double x){
+        if(x < 0){
+            x = Multiplicacao.calcular(x, -1);
+        }
+        return x;
     }
 }
