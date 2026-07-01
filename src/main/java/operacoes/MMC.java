@@ -12,7 +12,7 @@ public class MMC {
         x = scanner.nextDouble();
         System.out.println("Digite o segundo valor: ");
         y = scanner.nextDouble();
-        System.out.println("\n MMC de " + x + " e " + y + "\n o resultao é: " + calcular(x,y));
+        System.out.println("o resultao é: " + calcular(x,y));
     }
 
     public static double calcular(double x, double y) {
